@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Select your chosen service:</h1>
+
+      <form class="form" action="/postcode" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+          
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="service1" name="service" type="radio" value="service1">
+                <label class="govuk-label govuk-radios__label" for="service">
+                  Order lateral flow tests to your home
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="service2" name="service" type="radio" value="service2">
+                <label class="govuk-label govuk-radios__label" for="service2">
+                  Check the availability of tests for collection in your local area
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="service3" name="service" type="radio" value="service3">
+                <label class="govuk-label govuk-radios__label" for="service3">
+                  Order tests on behalf of your organisation
+                </label>
+              </div>
+            </div>
+        
+          </fieldset>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

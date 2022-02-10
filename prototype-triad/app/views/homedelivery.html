@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Delivery Address:</h1>
+
+      <form class="form" action="/test" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+          
+            <div class="govuk-form-group">
+              <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="postcode">
+                 Select your address
+                </label>
+              </h1>
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="sort">
+                 Address
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                  <option value="address1">Address 1</option>
+                  <option value="address2" >Address 2</option>
+                  <option value="address3">Address 3</option>
+                  <option value="address4">Address 4</option>
+                </select>
+              </div>
+              <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="postcode">
+                Or enter it manually
+               </label>
+             </h1>
+        
+          </fieldset>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
