@@ -1,0 +1,161 @@
+{% extends "layout.html" %} {% block pageTitle %} Content page template – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a> {% endblock %} {% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-xl">
+            Orders:
+        </h2>
+    </div>
+    <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Pharmacy Orders</caption>
+        <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header app-custom-class">Name</th>
+                <th scope="col" class="govuk-table__header app-custom-class">Order Date</th>
+                <th scope="col" class="govuk-table__header app-custom-class">LFTs Required</th>
+                <th scope="col" class="govuk-table__header app-custom-class">Pharmacy Stock Level</th>
+                <th scope="col" class="govuk-table__header app-custom-class">Order Status</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Boots Pharmacy</th>
+                <td class="govuk-table__cell">11/02/2022</td>
+                <td class="govuk-table__cell">2,569</td>
+                <td class="govuk-table__cell">
+
+                    <strong class="govuk-tag" style="background-color:rgb(228, 91, 38); ">
+                        Low
+                      </strong>
+                </td>
+                <td class="govuk-table__cell ">
+
+                    <strong class="govuk-tag">
+                        Delivered
+                      </strong>
+                </td>
+            </tr>
+
+
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Niva Pharmacy</th>
+                <td class="govuk-table__cell">12/02/2022</td>
+                <td class="govuk-table__cell">1,200</td>
+                <td class="govuk-table__cell">
+                    <strong class="govuk-tag" style="background-color:orange; ">
+                        Medium
+                      </strong>
+
+                </td>
+                <td class="govuk-table__cell ">
+
+                    <strong class="govuk-tag">
+                        Out for Delivery
+                      </strong>
+                </td>
+            </tr>
+            <tr class="govuk-table__row ">
+                <th scope="row " class="govuk-table__header ">Safecarez Chemist</th>
+                <td class="govuk-table__cell ">13/02/2022</td>
+                <td class="govuk-table__cell ">5,589</td>
+                <td class="govuk-table__cell ">
+
+                    <strong class="govuk-tag " style="background-color:green; ">
+                        High
+                      </strong>
+                </td>
+                <td class="govuk-table__cell ">
+
+                    <strong class="govuk-tag">
+                        In Progress
+                      </strong>
+                </td>
+            </tr>
+
+            <tr class="govuk-table__row ">
+                <th scope="row " class="govuk-table__header ">Vision Pharmacy</th>
+                <td class="govuk-table__cell ">14/02/2022</td>
+                <td class="govuk-table__cell ">10,120</td>
+                <td class="govuk-table__cell ">
+
+                    <strong class="govuk-tag " style="background-color:red; ">
+                        Out of Stock
+                      </strong>
+                </td>
+                <td class="govuk-table__cell ">
+
+                    <strong class="govuk-tag">
+                        Shipping
+                      </strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="govuk-table ">
+        <caption class="govuk-table__caption govuk-table__caption--m ">Organisation Orders</caption>
+        <thead class="govuk-table__head ">
+            <tr class="govuk-table__row ">
+                <th scope="col " class="govuk-table__header app-custom-class ">Name</th>
+                <th scope="col " class="govuk-table__header app-custom-class ">Order Date</th>
+                <th scope="col " class="govuk-table__header app-custom-class ">LFTs Required</th>
+                <th scope="col" class="govuk-table__header app-custom-class">Priority</th>
+                <th scope="col" class="govuk-table__header app-custom-class">Order Status</th>
+            </tr>
+        </thead>
+        <tbody class="govuk-table__body ">
+            <tr class="govuk-table__row ">
+                <th scope="row " class="govuk-table__header ">Northampton Care Home</th>
+                <td class="govuk-table__cell ">11/02/2022</td>
+                <td class="govuk-table__cell ">200</td>
+                <td class="govuk-table__cell ">
+                    <strong class="govuk-tag " style="background-color:red; ">
+                        High
+                      </strong>
+                </td>
+                <td class="govuk-table__cell ">
+
+                    <strong class="govuk-tag">
+                        Out for Delivery
+                      </strong>
+                </td>
+            </tr>
+            <tr class="govuk-table__row ">
+                <th scope="row " class="govuk-table__header ">St. Peters Health Center</th>
+                <td class="govuk-table__cell ">12/02/2022</td>
+                <td class="govuk-table__cell ">1,000</td>
+                <td class="govuk-table__cell ">
+                    <strong class="govuk-tag " style="background-color:red; ">
+                        High
+                      </strong>
+                </td>
+
+                <td class="govuk-table__cell ">
+
+                    <strong class="govuk-tag">
+                        Out for Delivery
+                      </strong>
+                </td>
+            </tr>
+            <tr class="govuk-table__row ">
+                <th scope="row " class="govuk-table__header ">Univeristy of Northampton</th>
+                <td class="govuk-table__cell ">13/02/2022</td>
+                <td class="govuk-table__cell ">2,000</td>
+                <td class="govuk-table__cell ">
+                    <strong class="govuk-tag " style="background-color:green; ">
+                        Low
+                      </strong>
+                </td>
+                <td class="govuk-table__cell ">
+
+                    <strong class="govuk-tag">
+                        Out for Delivery
+                      </strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
