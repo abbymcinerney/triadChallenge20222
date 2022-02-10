@@ -1,0 +1,46 @@
+{% extends "layout.html" %} {% block pageTitle %} Content page template – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a> {% endblock %} {% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+            Lateral Flow Tests Collection points and availability
+        </h1>
+
+        <p>Results shows the nearest collection point to your location</p>
+
+        <ul class="nhsuk-list app-list--border nhsuk-u-padding-top-4" id="list-container" style="display: block;">
+            <table class="govuk-table"></table>
+            <li class="nhsuk-u-padding-bottom-4 nhsuk-u-margin-bottom-4">
+                <h2><a data-route="" class="router_site" href="#/site/FKA78" onclick="showSiteDetailForPopup('FKA78')">Mounts Health Centre Pharmacy</a></h2>
+                <p><strong data-i18n="site-types.testkit-pickup">Location:</strong> The Mounts Medical Centre, NN1 3DS</p>
+                <p><strong data-i18n="site-types.testkit-pickup">LFT Availability:</strong> Stock Available - <strong>156</strong> Lateral Flow Test Available</p>
+                <p><strong data-i18n="opening-times-today">Today's opening hours</strong><br><span id="opening-hours-thu-0">08:30am - 11:00pm</span><br></p>
+                <p><strong data-i18n="status">Status</strong><br><span data-i18n="open.upper">Open</span></p>
+                <p><strong>Directions</strong><br><a target="_blank" href="https://www.google.com/maps?daddr=52.242233,-0.897251">Get Directions</a></p>
+                <button class="govuk-button" data-module="govuk-button">
+                 Book Collection
+                </button>
+
+            </li>
+
+            <li class="nhsuk-u-padding-bottom-4 nhsuk-u-margin-bottom-4">
+                <h2><a data-route="" class="router_site" href="#/site/FKA78" onclick="showSiteDetailForPopup('FKA78')">Mounts Health Centre Pharmacy</a></h2>
+                <p><strong data-i18n="site-types.testkit-pickup">Location:</strong> The Mounts Medical Centre, NN1 3DS</p>
+                <p><strong data-i18n="site-types.testkit-pickup">LFT Availability:</strong> Out of stock - Lateral Flow Test Not Available.</p>
+                <p><strong data-i18n="opening-times-today">Today's opening hours</strong><br><span id="opening-hours-thu-0">08:30am - 11:00pm</span><br></p>
+                <p><strong data-i18n="status">Status</strong><br><span data-i18n="open.upper">Open</span></p>
+                <p><strong>Directions</strong><br><a target="_blank" href="https://www.google.com/maps?daddr=52.242233,-0.897251">Get Directions</a></p>
+                <button class="govuk-button" data-module="govuk-button">
+                  Book Collection
+                </button>
+
+            </li>
+
+        </ul>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
