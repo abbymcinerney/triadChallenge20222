@@ -1,12 +1,18 @@
 {% extends "layout.html" %} {% block pageTitle %} Content page template – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block beforeContent %}
 <a class="govuk-back-link" href="javascript:window.history.back()">Back</a> {% endblock %} {% block content %}
 
+<div class="govuk-panel govuk-panel--confirmation">
+    <h1 class="govuk-panel__title">
+        Collection Confirmation
+    </h1>
+    <div class="govuk-panel__body">
+        Your reference number<br><strong>HDJ2123F</strong>
+    </div>
+</div>
+
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <h2 class="govuk-heading-xl">
-            Collection Confirmation : #112589
-        </h2>
 
         <p>
 
@@ -14,9 +20,10 @@
         </p>
         <p><strong>Collection Time: </strong> 10:00am - 11:00am</p>
         <p><strong>Collection Address: </strong> Park Campus, Boughton Green Road, Northampton NN2 7AL ·</p>
-        <p>Please present your COLLECTION CONFIRMATION CODE at the pharmacy to collect your Lateral Flow Test</p>
+
 
     </div>
-</div>
 
+</div>
+<p>Please present your COLLECTION REFERENCE CODE at the pharmacy to collect your Lateral Flow Test</p>
 {% endblock %}
