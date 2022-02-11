@@ -1,0 +1,63 @@
+{% extends "layout.html" %} {% block pageTitle %} Content page template – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a> {% endblock %} {% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-xl">
+            Vision Pharmacy Dashboard
+        </h2>
+    </div>
+</div>
+<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Lateral Flow Test Collection Bookings
+        </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+        <p class="govuk-notification-banner__heading">
+            26 LFT Collection Booked for today.
+            <a class="govuk-notification-banner__link" href="#">View Bookings</a>.
+        </p>
+    </div>
+</div>
+<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+    <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          Low Stock Alart
+        </strong>
+    </div>
+    <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+            <li>
+                <a href="#passport-issued-day">Only 100 Lateral Flow Tests left.</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              Delivery Expected at: 10:00 am
+            </strong>
+        </div>
+
+
+        <p>
+            <strong>LFT Available in inventory: </strong>100
+        </p>
+        <p><strong>LFT Sold today: </strong> 1,789</p>
+        <p><strong>LFT Collection for today: </strong> 26</p>
+        <button class="govuk-button" data-module="govuk-button">
+            Order LFT
+          </button>
+    </div>
+</div>
+{% endblock %}
