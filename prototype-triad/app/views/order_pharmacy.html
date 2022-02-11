@@ -1,0 +1,19 @@
+{% extends "layout.html" %} {% block pageTitle %} Content page template – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a> {% endblock %} {% block content %}
+
+
+
+<div class="govuk-form-group">
+    <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+            Pharmacy LFT Order Page
+          </label>
+    </h2>
+    <label class="govuk-label" for="width-10">
+            Enter the number of Lateral Flow Tests Required
+          </label>
+    <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+
+</div>
+<button class="govuk-button" data-module="govuk-button">
+    Order Now
+  </button> {% endblock %}
