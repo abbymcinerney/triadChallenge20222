@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Select a date for delivery:</h1>
+
+      <form class="form" action="/organisation_time" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+          
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="day1" name="day" type="radio" value="day1">
+                <label class="govuk-label govuk-radios__label" for="day">
+                  Monday February 14th 2022
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="day2" name="day" type="radio" value="day2">
+                <label class="govuk-label govuk-radios__label" for="day2">
+                 Tuesday February 15th 2022
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="day3" name="day" type="radio" value="day3">
+                <label class="govuk-label govuk-radios__label" for="day3">
+                   Wednesday February 16th 2022
+                </label>
+              </div>
+            </div>
+        
+          </fieldset>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
