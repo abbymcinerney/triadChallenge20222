@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Select a timeslot for delivery:</h1>
+
+      <form class="form" action="#" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+          
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="time1" name="time" type="radio" value="time1">
+                <label class="govuk-label govuk-radios__label" for="time">
+                  11.00am - 12.00pm
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="time2" name="time" type="radio" value="time2">
+                <label class="govuk-label govuk-radios__label" for="time2">
+                 11.30am - 12.30pm
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="time3" name="time" type="radio" value="time3">
+                <label class="govuk-label govuk-radios__label" for="time3">
+                   12.00pm - 1.00pm
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="time4" name="time" type="radio" value="time4">
+                <label class="govuk-label govuk-radios__label" for="time4">
+                   1.00pm - 2.00pm
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="time5" name="time" type="radio" value="time5">
+                <label class="govuk-label govuk-radios__label" for="time4">
+                   3.00pm - 4.00pm
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
