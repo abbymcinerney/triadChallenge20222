@@ -1,0 +1,28 @@
+{% extends "layout.html" %} {% block pageTitle %} Content page template – {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block beforeContent %}
+<a class="govuk-back-link" href="javascript:window.history.back()">Back</a> {% endblock %} {% block content %}
+
+<div class="govuk-panel govuk-panel--confirmation">
+    <h1 class="govuk-panel__title">
+        Collection Confirmation
+    </h1>
+    <div class="govuk-panel__body">
+        Your collection number<br><strong>123456</strong>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+        <p>
+
+            <strong>Collection Date: </strong>11 February 2022
+        </p>
+        <p><strong>Collection Address: </strong> Park Campus, Boughton Green Road, Northampton NN2 7AL ·</p>
+
+
+    </div>
+
+</div>
+<p>Please present your COLLECTION REFERENCE CODE at the pharmacy to collect your Lateral Flow Test</p>
+{% endblock %}
